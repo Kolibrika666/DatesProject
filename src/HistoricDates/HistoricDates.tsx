@@ -5,6 +5,12 @@ const HistoricDates = () => {
   return (
     <>
       <div className={s.main}>
+      <div className={s.item}>
+          <picture>icon</picture>
+          <h1>
+            Исторические <p></p>даты
+          </h1>
+        </div>
         <div className={s.circle}>
           <svg
             viewBox="0 0 100 100"
@@ -27,12 +33,7 @@ const HistoricDates = () => {
         <div className={s.swip}>
         svip
         </div>
-        <div className={s.item}>
-          <picture>icon</picture>
-          <h1>
-            Исторические <p></p>даты
-          </h1>
-        </div>
+        
         <div className={s.item}></div>
         <div className={s.item}></div>
         <div className={s.item}></div>
