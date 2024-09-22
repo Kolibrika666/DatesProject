@@ -1,0 +1,13 @@
+@import "../globalStyles/fonts.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(244,245,249);
+    display: flex;
+    justify-content: center;
+    font-family: 'PTSansWebRegular';
+}
