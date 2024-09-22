@@ -7,7 +7,12 @@
 
 body {
     background-color: rgb(244,245,249);
-    display: flex;
+    display: grid;
     justify-content: center;
     font-family: 'PTSansWebRegular';
+}
+
+svg {
+    height: 100%;
+    width: 100%;
 }
