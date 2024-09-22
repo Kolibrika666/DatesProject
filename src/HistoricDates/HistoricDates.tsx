@@ -1,7 +1,8 @@
 import React from "react";
 import s from "./HistoricDates.module.scss";
+import { Period } from "./ui";
 
-const HistoricDates = () => {
+export const HistoricDates = () => {
   return (
     <>
       <div className={s.main}>
@@ -28,12 +29,11 @@ const HistoricDates = () => {
           </svg>
         </div>
         <div className={s.period}>
-        period
+        <Period/>
         </div>
         <div className={s.swip}>
         svip
         </div>
-        
         <div className={s.item}></div>
         <div className={s.item}></div>
         <div className={s.item}></div>
@@ -42,4 +42,4 @@ const HistoricDates = () => {
   );
 };
 
-export default HistoricDates;
+

@@ -1,0 +1,109 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 40% 50%;
+  width: 100vw;
+  height: 100vh;
+  min-width: 250px;
+  padding: 15px;
+  @media screen and (orientation: landscape) {
+    z-index: 2;
+    position: relative;
+    border: 1px solid rgba(66, 86, 122, 0.1);
+    background-color: rgba(66, 86, 122, 0.1);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 60%;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1440px;
+    min-height: 600px;
+    display: grid;
+    gap: 1px;
+    padding: 0px;
+  }
+  .item {
+    align-content: end;
+    @media screen and (orientation: landscape) {
+      z-index: 1;
+      background-color: rgb(244, 245, 249);
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-items: center;
+      color: transparent;
+      display: flex;
+    }
+    picture {
+      display: none;
+      @media screen and (orientation: landscape) {
+        display: block;
+        height: 40%;
+        background-image: url("../assets/iconStick.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: transparent;
+      }
+    }
+    h1 {
+      margin-left: 20px;
+      height: 40%;
+      color: #42567a;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 67.2px;
+      text-align: left;
+
+      @media (max-width: 1250px) {
+        font-size: 40px;
+      }
+      @media (max-width: 1000px) {
+        line-height: 40px;
+        font-size: 30px;
+      }
+      @media (max-width: 648px) {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+      }
+    }
+  }
+  .circle {
+    display: none;
+    @media screen and (orientation: landscape) {
+      display: block;
+      top: 0%;
+      left: 0%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+    }
+  }
+  .period {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
+    position: relative;
+    @media screen and (orientation: landscape) {
+      top: 20%;
+      position: absolute;
+      width: 100%;
+      height: 40%;
+      z-index: 3;
+    }
+  }
+  .swip {
+    background-color: #3870d8;
+    position: relative;
+    @media screen and (orientation: landscape) {
+      background-color: rgba(21, 255, 0, 0.068);
+      top: 60%;
+      position: absolute;
+      width: 100%;
+      height: 40%;
+      z-index: 3;
+    }
+  }
+}
