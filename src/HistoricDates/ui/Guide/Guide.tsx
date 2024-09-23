@@ -5,7 +5,7 @@ const Guide = () => {
 
     return (
         <>
-        <ButtonGuide value={1}/>
+        <ButtonGuide value={1} isActive = {false}/>
              <svg
             viewBox="0 0 100 100"
             version="1.1"

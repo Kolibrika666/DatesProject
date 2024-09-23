@@ -3,22 +3,21 @@ import s from "./ButtonGuide.module.scss";
 
 type ButtonGuideType = {
   value: number;
+  isActive: boolean;
 
 };
 
-const ButtonGuide = ({ value }: ButtonGuideType) => {
+const ButtonGuide = ({ value, isActive }: ButtonGuideType) => {
 
-    const [isActive, setisActive] = useState(false)
-
-
+    const [active, setActive] = useState(isActive)
 
     const heandleClick = () => {
-        setisActive((prev) => !prev)
+        setActive((prev) => !prev)
     }
 
   return (
     <button
-      className={ isActive ? s.isActive : s.is}
+      className={ active ? s.isActive : s.isInActive}
       value={value}
       onClick={heandleClick}
     >
