@@ -11,6 +11,7 @@
 - Swiper
 
 ## Использование
-$ npm i 
-$ npm run start
-
+- $ npm i 
+- $ npm run start
+## Полезные ссылки
+- npm install @reduxjs/toolkit react-redux --legacy-peer-deps (установка Redux)
