@@ -1,0 +1,35 @@
+.isInActive {
+cursor: pointer;
+margin: -3px;
+position: absolute;
+left: 50%;
+top: 10%;
+background-color: rgba(66, 86, 122, 0.8);
+border: none;
+color: transparent;
+width: 7px;
+height: 7px;
+border-radius: 50%;
+transition: all 0.3s ease;
+}
+.isActive {
+    @extend .isInActive;
+    margin: -20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #303E5880;
+    background-color: rgb(244,245,249);
+    color: #303E5880;
+    transition: all 0.3s ease;
+}
+
+.isInActive:hover {
+@extend .isActive;
+    transition: none;
+}
+
+.isActive:hover {
+    @extend .isActive;
+    transition: none;
+}
+
